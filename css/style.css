@@ -1,4 +1,60 @@
+.shadow-1{
+filter: drop-shadow(0px 40px 30px rgba(70,109,65, 0.5));
+position: relative;
+}
 
+.box-1{
+  height: 4cm;
+  width: 4cm;
+  border-radius: 10px;
+  background: #466d41;
+  left: 15px;
+  top: -35px;
+  position: absolute;
+}
+
+.shadow-2{
+filter: drop-shadow(0px 40px 30px rgba(199,67,39, 0.4));
+position: relative;
+}
+
+.box-2{
+  height: 4cm;
+  width: 4cm;
+  border-radius: 10px;
+  background: #c74327;
+  right: 20px;
+  top: -5px;
+  position: absolute;
+}
+
+.shadow-3{
+filter: drop-shadow(0px 40px 30px rgba(26,37,39, 0.4));
+position: relative;
+}
+
+.box-3{
+  height: 4cm;
+  width: 4cm;
+  border-radius: 10px;
+  background: #1A2527;
+  position: absolute;
+}
+
+.shadow-4{
+filter: drop-shadow(0px 40px 30px rgba(221,87,35, 0.4));
+position: relative;
+}
+
+.box-4{
+  height: 4cm;
+  width: 4cm;
+  border-radius: 10px;
+  background: #DD5723;
+  right: 5px;
+  top: -50px;
+  position: absolute;
+}
 
 body {
   line-height: 1.4;
@@ -80,7 +136,7 @@ a:focus, a:hover {
   display: inline-block;
   font-size: 14px;
   letter-spacing: 1px;
-  padding: 12px 12px 12px 12px;
+  padding: 10px 18px 10px 18px;
   text-transform: none;
   border-radius: 40px;
   text-align: center;
@@ -653,7 +709,7 @@ a:focus, a:hover {
   content: "";
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0);
   left: 0;
   top: 0;
 }
@@ -1243,12 +1299,13 @@ a:focus, a:hover {
   border: 1px solid #ddd;
   border-radius: 10px;
   margin-left: 15px;
+  height: 12cm;
 }
 @media(max-width:991px)
 {
 .services .service-block.color-bg {
 
-  margin-left: 0px;
+  margin-left: 3px;
 }
 }
 .services .service-block.color-bg i, .services .service-block.color-bg h3, {
