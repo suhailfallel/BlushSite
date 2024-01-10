@@ -64,8 +64,8 @@ Fixed Navigation
     <nav class="navbar navbar-expand-lg navbar-light px-0">
       <!-- logo -->
       <a class="navbar-brand logo" href="index.html">
-        <img loading="lazy" class="logo-default" src="images/logo.png" alt="logo" />
-        <img loading="lazy" class="logo-white" src="images/logo-white.png" alt="logo" />
+        <img loading="lazy" class="logo-default" src="images/blushL.png" alt="logo" />
+        <img loading="lazy" class="logo-white" src="images/blushL.png" alt="logo" />
       </a>
       <!-- /logo -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
@@ -235,21 +235,61 @@ Start feature Section
 			<div class="col-md-5 py-4">
       <h3 style="color:#525252">Salon Product /Services Management</h3>
       <p>Add, edit, and delete salon services or products with details such as name, code, price, and description.</p>
-			<a href="#" class="hover-me-1">Learn More</a>
+			<a  class="hover-me-1" onclick="openForm1()">Learn More</a>
 			</div>
 		</div>
+
+	<div class="form-popup " id="myForm1">
+  <div  class="form-container">
+    <h3>Salon Product /Services Management</h3>
+    <p>1. Add, edit, and delete salon services or products with details such as name, code, price, and description.</p>
+    <p>2. Organize products into categories and subcategories for easy navigation.</p>
+    <p>3. Updating product information (price, stock, description).</p>
+    <button type="button" class="btn cancel" onclick="closeForm1()">Close</button>
+</div>
+</div>
+
+<script>
+function openForm1() {
+  document.getElementById("myForm1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm1").style.display = "none";
+}
+</script>
      
      <div class="row py-5">
      	<div class="col-md-5 py-5   order-2 order-md-1">
       <h3 style="color:#525252">Employee Sales & Commission Management</h3>
       <p>Manage staff profiles, roles, and access permissions.</p>
-			<a href="#" class="hover-me-2">Learn More</a>
+			<a class="hover-me-2" onclick="openForm2()">Learn More</a>
 			</div>
 			<div class="col-md-7 mb-4 mb-md-0 order-1 order-md-2">
 				<div class="box-2"></div>
 				<img loading="lazy" src="images/staff dt.png" class="img-fluid shadow-2" alt="">
 			</div>
 		</div>
+
+
+	<div class="form-popup " id="myForm2">
+  <div  class="form-container">
+    <h3>Employee Sales & Commission Management</h3>
+    <p>1. Manage staff profiles, roles, and access permissions.</p>
+    <p>2. Track sales and commission for services by each staff.</p>
+    <button type="button" class="btn cancel" onclick="closeForm2()">Close</button>
+</div>
+</div>
+
+<script>
+function openForm2() {
+  document.getElementById("myForm2").style.display = "block";
+}
+
+function closeForm2() {
+  document.getElementById("myForm2").style.display = "none";
+}
+</script>
 
 			<div class="row py-5">
 			<div class="col-md-7 mb-4 mb-md-0">
@@ -258,22 +298,66 @@ Start feature Section
 			</div>
 			<div class="col-md-5 py-4">
       <h3 style="color:#525252">Customer Management</h3>
-      <p>Creating and managing customer profiles</p>
-			<a href="#" class="hover-me-3">Learn More</a>
+      <p>Creating and managing customer profiles.</p>
+			<a  class="hover-me-3" onclick="openForm3()">Learn More</a>
 			</div>
 		</div>
+
+
+	<div class="form-popup " id="myForm3">
+  <div  class="form-container">
+    <h3>Customer Management</h3>
+    <p>1. Creating and managing customer profiles.</p>
+    <p>2. Customer profiles with contact details, appointment history, and preferences.</p>
+    <p>3. Customer preferences for services, stylists, and products.</p>
+    <p>4. Tracking customer purchase history.</p>
+
+    <button type="button" class="btn cancel" onclick="closeForm3()">Close</button>
+</div>
+</div>
+
+<script>
+function openForm3() {
+  document.getElementById("myForm3").style.display = "block";
+}
+
+function closeForm3() {
+  document.getElementById("myForm3").style.display = "none";
+}
+</script>
 
 		  <div class="row py-5">
      	<div class="col-md-5 py-4  order-2 order-md-1">
       <h3 style="color:#525252">POS integration with Cloud Dashboard & Void reporting</h3>
       <p>Compatibility with various POS hardware, such as cash drawers, receipt printers, and card readers.</p>
-			<a href="#" class="hover-me-4">Learn More</a>
+			<a onclick="openForm4()" class="hover-me-4">Learn More</a>
 			</div>
 			<div class="col-md-7 mb-4 mb-md-0 order-1 order-md-2">
 				<div class="box-4"></div>
 				<img loading="lazy" src="images/Screenshot (29) copy.png" class="img-fluid shadow-4" alt="">
 			</div>
 		</div>
+
+			<div class="form-popup " id="myForm4">
+  <div  class="form-container">
+    <h3>POS integration with Cloud Dashboard & Void reporting</h3>
+    <p>1. Compatibility with various POS hardware, such as cash drawers, receipt printers, and card readers.</p>
+    <p>2. Cloud Dashboard for salon owners or managers to monitor and manage operations remotely.</p>
+    <p>3. Void report view and editing for salon owners through Cloud integration.</p>
+
+    <button type="button" class="btn cancel" onclick="closeForm4()">Close</button>
+</div>
+</div>
+
+<script>
+function openForm4() {
+  document.getElementById("myForm4").style.display = "block";
+}
+
+function closeForm4() {
+  document.getElementById("myForm4").style.display = "none";
+}
+</script>
 
 		 <!-- End row -->
 	</div> <!-- End container -->
@@ -282,38 +366,167 @@ Start feature Section
 <section class="py-5">
 	<div class="container">
 		<div class="row">
+
 			<div class="col-lg-4 mt-2 py-2">
 			<h3 style="color:#525252">Customized Billing and Receipts</h3>
       <p>Generate professional-looking sales bills and receipts for customers.</p>
-			<a href="#" class="hover-me-4">Learn More</a>
+			<a onclick="openForm5()" class="hover-me-4">Learn More</a>
 			</div>
+
+			<div class="form-popup " id="myForm5">
+  <div  class="form-container">
+    <h3>Customized Billing and Receipts</h3>
+    <p>1. Generate professional-looking sales bills and receipts for customers.</p>
+    <p>2. Customize bills/payment receipts templates with company branding and contact information.</p>
+    <button type="button" class="btn cancel" onclick="closeForm5()">Close</button>
+</div>
+</div>
+
+<script>
+function openForm5() {
+  document.getElementById("myForm5").style.display = "block";
+}
+
+function closeForm5() {
+  document.getElementById("myForm5").style.display = "none";
+}
+</script>
+
+
 			<div class="col-lg-4 mt-2  py-2">
 			<h3 style="color:#525252">Daily Expenses and Purchases Management</h3>
       <p>Track supplier information and manage purchase orders.</p>
-			<a href="#" class="hover-me-4">Learn More</a>
+			<a onclick="openForm6()" class="hover-me-4">Learn More</a>
 			</div>
+
+				<div class="form-popup" id="myForm6">
+			  <div  class="form-container">
+			    <h3>Daily Expenses and Purchases Management</h3>
+			    <p>1. Track supplier information and manage purchase orders.</p>
+			    <p>2. Track salon expense for retail products such as shampoos, conditioners, and styling products.</p>
+			    <button type="button" class="btn cancel" onclick="closeForm6()">Close</button>
+			</div>
+			</div>
+
+			<script>
+			function openForm6() {
+			  document.getElementById("myForm6").style.display = "block";
+			}
+
+			function closeForm6() {
+			  document.getElementById("myForm6").style.display = "none";
+			}
+			</script>
+
 			<div class="col-lg-4 mt-2 py-2">
 			<h3 style="color:#525252">Multiple Payment Options</h3>
-      <p>Accepting multiple payment methods (cash, credit/debit cards)</p>
-			<a href="#" class="hover-me-4">Learn More</a>
+      <p>Accepting multiple payment methods (cash, credit/debit cards).</p>
+			<a onclick="openForm7()" class="hover-me-4">Learn More</a>
 			</div>
+
+				<div class="form-popup" id="myForm7">
+			  <div  class="form-container">
+			    <h3>Multiple Payment Options</h3>
+			    <p>1. Accepting multiple payment methods (cash, credit/debit cards).</p>
+			    <p>2. Applying discounts, coupons, or promotions.</p>
+			    <button type="button" class="btn cancel" onclick="closeForm7()">Close</button>
+			</div>
+			</div>
+
+			<script>
+			function openForm7() {
+			  document.getElementById("myForm7").style.display = "block";
+			}
+
+			function closeForm7() {
+			  document.getElementById("myForm7").style.display = "none";
+			}
+			</script>
 		</div>
+
 		<div class="row">
+
 			<div class="col-lg-4 mt-2 py-2">
 			<h3 style="color:#525252">Multi-Store and Multi-Register Support</h3>
       <p>Ability to manage multiple stores and registers from a centralized system.</p>
-			<a href="#" class="hover-me-4">Learn More</a>
+			<a onclick="openForm8()" class="hover-me-4">Learn More</a>
 			</div>
+
+				<div class="form-popup" id="myForm8">
+			  <div  class="form-container">
+			    <h3>Multi-Store and Multi-Register Support</h3>
+			    <p>1. Ability to manage multiple stores and registers from a centralized system.</p>
+			    <p>2. Consolidated reporting for all stores or individual store-level reporting.</p>
+			    <button type="button" class="btn cancel" onclick="closeForm8()">Close</button>
+			</div>
+			</div>
+
+			<script>
+			function openForm8() {
+			  document.getElementById("myForm8").style.display = "block";
+			}
+
+			function closeForm8() {
+			  document.getElementById("myForm8").style.display = "none";
+			}
+			</script>
+
+
+
 			<div class="col-lg-4 mt-2 py-2">
 			<h3 style="color:#525252">Online & Offline Mode</h3>
       <p>Ability to continue processing sales and transactions even when the internet is down.</p>
-			<a href="#" class="hover-me-4">Learn More</a>
+			<a onclick="openForm9()" class="hover-me-4">Learn More</a>
 			</div>
+
+				<div class="form-popup" id="myForm9">
+			  <div  class="form-container">
+			    <h3>Online & Offline Mode</h3>
+			    <p>1. Ability to continue processing sales and transactions even when the internet is down.</p>
+			    <p>2. Data synchronization once the internet connection is restored.</p>
+			    <button type="button" class="btn cancel" onclick="closeForm9()">Close</button>
+			</div>
+			</div>
+
+			<script>
+			function openForm9() {
+			  document.getElementById("myForm9").style.display = "block";
+			}
+
+			function closeForm9() {
+			  document.getElementById("myForm9").style.display = "none";
+			}
+			</script>
+
+
 			<div class="col-lg-4 mt-2 py-2">
 			<h3 style="color:#525252">Reporting and Analytics</h3>
-      <p>Sales reports (daily, weekly, monthly)</p>
-			<a href="#" class="hover-me-4">Learn More</a>
+      <p>Sales reports (daily, weekly, monthly).</p>
+			<a onclick="openForm0()" class="hover-me-4">Learn More</a>
 			</div>
+
+				<div class="form-popup" id="myForm0">
+			  <div  class="form-container">
+			    <h3>Reporting and Analytics</h3>
+			    <p>1. Sales reports (daily, weekly, monthly).</p>
+			    <p>2. Profit and loss statements.</p>
+			    <p>3. Customizable reports for business insights.</p>
+			    <button type="button" class="btn cancel" onclick="closeForm0()">Close</button>
+			</div>
+			</div>
+
+			<script>
+			function openForm0() {
+			  document.getElementById("myForm0").style.display = "block";
+			}
+
+			function closeForm0() {
+			  document.getElementById("myForm0").style.display = "none";
+			}
+			</script>
+
+
+
 		</div>
 	</div>
 </section>
